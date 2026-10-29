@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Manufacturing - Vemer Global</title>
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services-gallery.css') }}">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
     <nav>
         <a href="/" class="logo-link">
             <div class="logo">
-                <img src="{{ asset('logo.png') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
+                <img src="{{ asset('Images/logo 1.jpg') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
                 <span class="logo-text">Vemer Global Investment Company</span>
             </div>
         </a>
@@ -33,21 +34,50 @@
         </ul>
     </nav>
 
-    <section class="service-hero">
-        <img src="images/product-manufacturing.jpg" alt="Product Manufacturing" class="service-img">
+    <section class="hero-section">
+        <h1>Product Manufacturing</h1>
+        <p>Quality products, thoughtful packaging, and production you can trust.</p>
     </section>
 
     <section class="service-detail">
-        <h1>Product Manufacturing</h1>
         <p>We manufacture high-quality products like N-Smart Wash liquid soap. Our production process ensures safety, quality, and branding excellence.</p>
         <ul>
             <li>Liquid soap production (including N-Smart Wash)</li>
             <li>Packaging and branding solutions</li>
             <li>Quality-controlled production processes</li>
         </ul>
-        <a href="/contact" class="learn-btn">Inquire Now</a>
     </section>
 
-    <footer class="footer"></footer>
+    <section class="service-gallery" aria-labelledby="manufacturing-gallery-title">
+        <div class="service-gallery-heading">
+            <p class="service-gallery-eyebrow">From production to presentation</p>
+            <h2 id="manufacturing-gallery-title">Made with quality in mind</h2>
+            <p>See how product manufacturing, packaging, and branding come together.</p>
+        </div>
+        <div class="service-gallery-grid">
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/soap.jpg') }}" alt="Packaged liquid soap products" loading="lazy" decoding="async">
+                <figcaption>Liquid soap products</figcaption>
+            </figure>
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/print.jpg') }}" alt="Printing equipment producing colorful materials" loading="lazy" decoding="async">
+                <figcaption>Packaging and print production</figcaption>
+            </figure>
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/logo.jpg') }}" alt="Colorful graphic identity design" loading="lazy" decoding="async">
+                <figcaption>Product branding</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ready to make a product?</h4>
+                <p><a href="/contact">Talk to us about manufacturing</a></p>
+                <p><a href="/services">Explore all services</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

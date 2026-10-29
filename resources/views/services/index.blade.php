@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Vemer Global Investment Company</title>
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
-    
+    <link rel="stylesheet" href="{{ asset('css/services-gallery.css') }}">
 
 </head>
 
@@ -26,7 +26,7 @@
     <nav>
         <a href="/" class="logo-link">
             <div class="logo">
-                <img src="{{ asset('logo.png') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
+                <img src="{{ asset('Images/logo 1.jpg') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
                 <span class="logo-text">Vemer Global Investment Company</span>
             </div>
         </a>
@@ -50,9 +50,13 @@
             <h2>Core Service Areas</h2>
             <div class="services-grid">
 
-
-
                 <div class="service-item">
+                    <div class="service-card-gallery">
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/background.jpg') }}" alt="Modern business buildings">
+                            <figcaption>Business projects</figcaption>
+                        </figure>
+                    </div>
                     <h3>Contract-Based Business Services</h3>
                     <p>We execute projects on a contract basis for government institutions, private companies, and
                         individuals in various sectors.</p>
@@ -65,6 +69,20 @@
                 </div>
 
                 <div class="service-item">
+                    <div class="service-card-gallery">
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/cctv.jpg') }}" alt="CCTV camera installation">
+                            <figcaption>Security systems</figcaption>
+                        </figure>
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/server 1.jpg') }}" alt="Technician working on server equipment">
+                            <figcaption>Network installation</figcaption>
+                        </figure>
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/server.jpg') }}" alt="Server racks and network hardware">
+                            <figcaption>Server support</figcaption>
+                        </figure>
+                    </div>
                     <h3>ICT Solutions</h3>
                     <ul>
                         <li>Network installation & maintenance</li>
@@ -77,6 +95,12 @@
                 </div>
 
                 <div class="service-item">
+                    <div class="service-card-gallery">
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/soap.jpg') }}" alt="Packaged soap products">
+                            <figcaption>Product manufacturing</figcaption>
+                        </figure>
+                    </div>
                     <h3>Product Manufacturing</h3>
                     <ul>
                         <li>Liquid soap production (including N-Smart Wash)</li>
@@ -88,6 +112,16 @@
                 </div>
 
                 <div class="service-item">
+                    <div class="service-card-gallery">
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/logo.jpg') }}" alt="Colorful logo design">
+                            <figcaption>Brand identity</figcaption>
+                        </figure>
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/print.jpg') }}" alt="Color printing and production">
+                            <figcaption>Print solutions</figcaption>
+                        </figure>
+                    </div>
                     <h3>Graphics & Branding Solutions</h3>
                     <ul>
                         <li>Logo design</li>
@@ -99,6 +133,12 @@
                 </div>
 
                 <div class="service-item">
+                    <div class="service-card-gallery">
+                        <figure class="service-card-image">
+                            <img src="{{ asset('Images/sound.jpg') }}" alt="Audio mixing console at a live event">
+                            <figcaption>Live sound engineering</figcaption>
+                        </figure>
+                    </div>
                     <h3>Sound & Audio Engineering</h3>
                     <ul>
                         <li>Sound system installation</li>

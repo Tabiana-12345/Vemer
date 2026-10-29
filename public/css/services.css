@@ -117,7 +117,7 @@ nav {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, rgba(68, 110, 238, 0.8) 0%, rgba(53, 114, 246, 0.8) 100%), url('../background.png');
+    background: linear-gradient(135deg, rgba(68, 110, 238, 0.8) 0%, rgba(53, 114, 246, 0.8) 100%), url('../Images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

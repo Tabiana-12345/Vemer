@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound & Audio Engineering - Vemer Global</title>
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services-gallery.css') }}">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
     <nav>
         <a href="/" class="logo-link">
             <div class="logo">
-                <img src="{{ asset('logo.png') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
+                <img src="{{ asset('Images/logo 1.jpg') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
                 <span class="logo-text">Vemer Global Investment Company</span>
             </div>
         </a>
@@ -33,12 +34,12 @@
         </ul>
     </nav>
 
-    <section class="service-hero">
-        <img src="images/sound-audio.jpg" alt="Sound & Audio Engineering" class="service-img">
+    <section class="hero-section">
+        <h1>Sound & Audio Engineering</h1>
+        <p>Clear, balanced sound for live events, studios, and audio productions.</p>
     </section>
 
     <section class="service-detail">
-        <h1>Sound & Audio Engineering</h1>
         <p>Our audio engineering services include live sound management, studio setup, and audio production to ensure professional sound quality.</p>
         <ul>
             <li>Sound system installation</li>
@@ -46,9 +47,30 @@
             <li>Audio recording and production</li>
             <li>Studio setup consultation</li>
         </ul>
-        <a href="/contact" class="learn-btn">Inquire Now</a>
     </section>
 
-    <footer class="footer"></footer>
+    <section class="service-gallery" aria-labelledby="audio-gallery-title">
+        <div class="service-gallery-heading">
+            <p class="service-gallery-eyebrow">Audio production</p>
+            <h2 id="audio-gallery-title">Sound built around your event</h2>
+            <p>Our audio work covers live sound, equipment setup, and production support.</p>
+        </div>
+        <div class="service-gallery-grid">
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/sound.jpg') }}" alt="Audio mixing console and sound equipment at a live event" loading="lazy" decoding="async">
+                <figcaption>Live sound engineering</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Planning an event or recording?</h4>
+                <p><a href="/contact">Talk to our audio team</a></p>
+                <p><a href="/services">Explore all services</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

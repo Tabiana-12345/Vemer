@@ -24,7 +24,7 @@
     <nav>
         <a href="/" class="logo-link">
             <div class="logo">
-                <img src="{{ asset('logo.png') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
+                <img src="{{ asset('Images/logo 1.jpg') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
                 <span class="logo-text">Vemer Global Investment Company</span>
             </div>
         </a>

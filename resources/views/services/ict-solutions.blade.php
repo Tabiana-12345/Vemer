@@ -6,23 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICT Solutions - Vemer Global</title>
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services-gallery.css') }}">
 </head>
 
 <body>
 
+    <div class="info-bar">
+        <div class="info-left">
+            <span>📍 Location: <span id="location">Dar es Salaam, Tanzania</span></span>
+        </div>
+        <div class="info-right">
+            <span>Timezone: <span id="timezone">UTC</span></span>
+            <span>Temperature: <span id="temperature">--&deg;C</span></span>
+        </div>
+    </div>
 
+    <nav>
+        <a href="/" class="logo-link">
+            <div class="logo">
+                <img src="{{ asset('Images/logo 1.jpg') }}" alt="Vemer Global Investment Company Logo" class="logo-img">
+                <span class="logo-text">Vemer Global Investment Company</span>
+            </div>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/contact">Contacts</a></li>
+        </ul>
+    </nav>
 
-    <section class="gallery">
-        <img src="/Images/cctv.jpg" alt="CCTV Installation">
-        <img src="/Images/server 1.jpg" alt="Server Setup">
-        <img src="/Images/server.jpg" alt="Server Maintenance">
-        <img src="/Images/print.jpg" alt="IT Consultancy">
-        <img src="/Images/logo.jpg" alt="System Integration">
-        <img src="/Images/sound.jpg" alt="Digital Transformation">
+    <section class="hero-section">
+        <h1>ICT Solutions</h1>
+        <p>Practical technology, secure infrastructure, and expert support.</p>
+    </section>
 
+    <section class="service-detail">
+        <p>We help businesses plan, install, and maintain the technology they need to operate securely and efficiently.</p>
+        <ul>
+            <li>Network installation and maintenance</li>
+            <li>CCTV and security system installation</li>
+            <li>Server setup and ongoing support</li>
+            <li>IT consultancy and system integration</li>
+        </ul>
+    </section>
 
-
-        <a href="/services">← Back to Services</a>
+    <section class="service-gallery" aria-labelledby="ict-gallery-title">
+        <div class="service-gallery-heading">
+            <p class="service-gallery-eyebrow">Technology in action</p>
+            <h2 id="ict-gallery-title">Connected, secure, and supported</h2>
+            <p>Explore examples of the infrastructure and security systems we install and maintain.</p>
+        </div>
+        <div class="service-gallery-grid">
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/cctv.jpg') }}" alt="CCTV camera used for site security" loading="lazy" decoding="async">
+                <figcaption>CCTV and security systems</figcaption>
+            </figure>
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/server 1.jpg') }}" alt="Technician working on server and network equipment" loading="lazy" decoding="async">
+                <figcaption>Network installation</figcaption>
+            </figure>
+            <figure class="service-gallery-card">
+                <img src="{{ asset('Images/server.jpg') }}" alt="Rows of server and network equipment" loading="lazy" decoding="async">
+                <figcaption>Server support</figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- Footer -->
