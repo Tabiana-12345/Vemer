@@ -22,8 +22,46 @@ class ExampleTest extends TestCase
         ];
 
         foreach ($paths as $path) {
-            $this->get($path)->assertOk();
+            $this->get($path)
+                ->assertOk()
+                ->assertSee('id="weather"', false)
+                ->assertSee('id="temperature"', false)
+                ->assertSee('Js/Weather.js')
+                ->assertSee('css/responsive.css');
         }
+    }
+
+    public function test_responsive_stylesheet_covers_mobile_and_tablet_layouts(): void
+    {
+        $stylesheetPath = public_path('css/responsive.css');
+
+        $this->assertFileExists($stylesheetPath);
+
+        $stylesheet = file_get_contents($stylesheetPath);
+
+        $this->assertNotFalse($stylesheet);
+        $this->assertStringContainsString('@media (max-width: 64rem)', $stylesheet);
+        $this->assertStringContainsString('@media (max-width: 48rem)', $stylesheet);
+        $this->assertStringContainsString('@media (max-width: 30rem)', $stylesheet);
+        $this->assertStringContainsString('.services-grid', $stylesheet);
+        $this->assertStringContainsString('.service-item .learn-btn', $stylesheet);
+        $this->assertStringContainsString('height: clamp(11rem, 20vw, 14rem)', $stylesheet);
+        $this->assertStringContainsString('.contact-section', $stylesheet);
+        $this->assertStringContainsString('.footer-content', $stylesheet);
+    }
+
+    public function test_weather_script_requests_current_conditions_from_open_meteo(): void
+    {
+        $scriptPath = public_path('Js/Weather.js');
+
+        $this->assertFileExists($scriptPath);
+
+        $script = file_get_contents($scriptPath);
+
+        $this->assertNotFalse($script);
+        $this->assertStringContainsString('api.open-meteo.com', $script);
+        $this->assertStringContainsString('temperature_2m,weather_code', $script);
+        $this->assertStringContainsString('Africa/Dar_es_Salaam', $script);
     }
 
     public function test_legacy_php_pages_redirect_to_laravel_routes(): void

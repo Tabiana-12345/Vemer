@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vemer Global Investment Company</title>
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
 </head>
 
@@ -16,8 +17,9 @@
             <span>📍 Location: <span id="location">Dar es Salaam, Tanzania</span></span>
         </div>
         <div class="info-right">
-            <span>Timezone: <span id="timezone">UTC</span></span>
-            <span>Temperature: <span id="temperature">--°C</span></span>
+            <span>Local time: <span id="timezone">Loading...</span></span>
+            <span>Temperature: <span id="temperature" aria-live="polite">--°C</span></span>
+            <span>Weather: <span id="weather" aria-live="polite">Loading...</span></span>
         </div>
     </div>
 
@@ -196,6 +198,7 @@
     </div>
 
     <script src="{{ asset('Js/Index.js') }}"></script>
+    <script src="{{ asset('Js/Weather.js') }}"></script>
 </body>
 
 </html>

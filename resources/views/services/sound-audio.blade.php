@@ -6,6 +6,7 @@
     <title>Sound & Audio Engineering - Vemer Global</title>
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ asset('css/services-gallery.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 </head>
 <body>
 
@@ -14,8 +15,9 @@
             <span>📍 Location: <span id="location">Dar es Salaam, Tanzania</span></span>
         </div>
         <div class="info-right">
-            <span>Timezone: <span id="timezone">UTC</span></span>
-            <span>Temperature: <span id="temperature">--&deg;C</span></span>
+            <span>Local time: <span id="timezone">Loading...</span></span>
+            <span>Temperature: <span id="temperature" aria-live="polite">--&deg;C</span></span>
+            <span>Weather: <span id="weather" aria-live="polite">Loading...</span></span>
         </div>
     </div>
 
@@ -72,5 +74,6 @@
             </div>
         </div>
     </footer>
+    <script src="{{ asset('Js/Weather.js') }}"></script>
 </body>
 </html>
